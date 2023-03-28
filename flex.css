@@ -1,0 +1,170 @@
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: #73dab2;
+}
+
+.flex {
+    margin: 10px;
+}
+
+/* Flexbox 1:  created flex container and added 5px of margin on ea side */
+.flexOne {
+    display: flex;
+}
+
+.flexOne .square {
+    margin: 5px;
+}
+
+/* Flexbox 2: created flex container and used flex direction set to column and added 2px of margin */
+.flexTwo {
+    display: flex;
+    flex-direction: column;
+}
+
+.flexTwo .square {
+    margin: 2px;
+}
+
+/*  Flexbox 3:  created a flex container and used row-reverse flex-direction and added 2px of margin*/
+.flexThree {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.flexThree .square {
+    margin: 2px;
+}
+
+/* Flexbox 4: created a flex container and set flex wrap*/
+.flexFour {
+    display: flex;
+    width: 350px;
+    flex-wrap: wrap;
+}
+
+.flexFour .square {
+    margin: 5px;
+    background-color: #3d8b6d;
+}
+
+/* Flexbox 5: created flex container where the 2nd item grows twice the extra space */
+.flexFive {
+    width: 350px;
+    display: flex;
+}
+
+.flexFive .item {
+    background-color: #0b6643;
+    width: 100px;
+    height: 100px;
+    margin: 2px;
+}
+
+.flexFive #grow {
+    flex-grow: 2;
+}
+
+/* Flexbox 6:  created flex containers and set different content justifications*/
+.flexSix {
+    height: 400px;
+    width: 500px;
+    background-color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.flexSix .one,
+.flexSix .two,
+.flexSix .three {
+    display: flex;
+}
+
+.flexSix .one {
+    justify-content: space-around;
+}
+
+.flexSix .two {
+    justify-content: space-between;
+    background-color: #d6d6d6;
+}
+
+.flexSix .three {
+    justify-content: space-evenly;
+}
+
+/* Flexbox 7: created flex containers and set flex direction to column and used different justify content for each child div */
+.flexSeven {
+    height: 400px;
+    width: 500px;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.flexSeven .one,
+.flexSeven .two,
+.flexSeven .three,
+.flexSeven .four {
+    display: flex;
+    flex-direction: column;
+}
+
+.flexSeven .one {
+    justify-content: center;
+}
+
+.flexSeven .two {
+    justify-content: flex-end;
+    background-color: #d6d6d6;
+}
+
+.flexSeven .three {
+    justify-content: flex-start;
+}
+
+.flexSeven .four {
+    justify-content: space-between;
+    background-color: #d6d6d6;
+}
+
+/* Flexbox 8: created flex containter and used align items to move elements vertically*/
+.flexEight {
+    display: flex;
+    height: 400px;
+    background-color: #eeeeee;
+    width: 300px;
+}
+
+.flexEight .one,
+.flexEight .two,
+.flexEight .three {
+    display: flex;
+}
+.flexEight .one {
+    align-items: center;
+}
+
+.flexEight .two {
+    align-items: flex-end;
+}
+
+.flexEight .three {
+    align-items: flex-start;
+}
+
+/* Flexbox 9:  */
+.flexNine {
+    display: flex;
+    width: 450px;
+    height: 250px;
+    background-color: #eeeeee;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.flexNine #special {
+    align-self: flex-end;
+}
